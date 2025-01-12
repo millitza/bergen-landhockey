@@ -1,15 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import * as intro from "../content/intro.md";
 ---
 
 <Layout>
 	<div class="l-site">
 		<Header />
 		<main>
-			<Hero />
+			<Hero
+				title={intro.frontmatter.title}
+				content={intro.rawContent()}
+				videoSrc={intro.frontmatter.videoSrc}
+			/>
 		</main>
 	</div>
 </Layout>
-

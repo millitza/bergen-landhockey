@@ -1,14 +1,21 @@
+---
+interface Props {
+	title: string;
+	content: string;
+    videoSrc: string;
+}
+
+const { title, content, videoSrc } = Astro.props;
+---
+
 <div class="hero">
     <div class="hero__text">
-        <h1 class="hero__title">Bergen Landhockey</h1>
+        <h1 class="hero__title">{title}</h1>
         <p class="hero__intro">
-            Vi spiller landhockey i Bergen, Norge.
-            Om sommeren spiller vi utendørs i regnet.
-            Fra oktober til mai spiller vi innendørs for å unngå for kalde temperaturer.
-            Vi leter etter nye spillere i voksenalder fra alle nivåer.
+            {content}
         </p>
     </div>
     <video class="hero__image" autoplay loop muted playsinline>
-        <source src="public/images/team_animation.webm" type="video/webm" />
+        <source src={videoSrc} type="video/webm" />
     </video>
 </div>
