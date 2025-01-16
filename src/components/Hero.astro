@@ -16,6 +16,6 @@ const { title, content: HeroContent, videoSrc } = Astro.props;
         <HeroContent class="hero__intro" />
     </div>
     <video class="hero__image" autoplay loop muted playsinline>
-        <source src={videoSrc} type="video/webm" />
+        <source src={`${import.meta.env.BASE_URL}/${videoSrc}`} type="video/webm" />
     </video>
 </div>

@@ -1,6 +1,6 @@
 ---
 title: "Bergen Landhockey"
-videoSrc: "public/images/team_animation.webm"
+videoSrc: "/images/team_animation.webm"
 ---
 
 Join us and help build Vestland's first field hockey team.
