@@ -1,0 +1,22 @@
+---
+import type { JSX } from 'astro/jsx-runtime';
+import { getSectionColor } from '../utils/sectionColors';
+
+interface Props {
+	title: string;
+    order: number;
+	render: () => JSX.Element;
+}
+
+const { title, order, render } = Astro.props;
+const { Content, headings } = await render();
+
+const styles = getSectionColor(order);
+---
+
+<div class="section" style={{ background: `var(${styles?.bgColor})`, color: `var(${styles?.textColor})` }}>
+    <div class="section__text">
+        <h2 class="section__title">{title}</h1>
+        <Content class="section__content" />
+    </div>
+</div>

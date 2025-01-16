@@ -2,7 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
-import * as intro from "../content/intro.md";
+import Section from "../components/Section.astro";
+import * as intro from "../data/intro.md";
+import { getCollection } from 'astro:content';
+const sections = await getCollection('sections');
 ---
 
 <Layout>
@@ -11,9 +14,10 @@ import * as intro from "../content/intro.md";
 		<main>
 			<Hero
 				title={intro.frontmatter.title}
-				content={intro.rawContent()}
+				content={intro.Content}
 				videoSrc={intro.frontmatter.videoSrc}
 			/>
+			{sections.sort((a, b) => a.data.order - b.data.order).map(section => <Section title={section.data.title} order={section.data.order} render={section.render} />)}
 		</main>
 	</div>
 </Layout>
