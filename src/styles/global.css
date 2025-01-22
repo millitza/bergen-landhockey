@@ -27,6 +27,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-primary-color);
+}
+
 h1 {
     font-size: 2rem;
     font-weight: 700;
@@ -56,10 +61,6 @@ button {
     width: 100%;
     background-color: var(--body-bg-color);
     margin-inline: auto;
-}
-
-.header {
-    --header-nav-gap: 0.5rem;
 }
 
 .header__inner {
@@ -186,4 +187,32 @@ button {
 }.section__title {
     font-family: "Noto Serif";
     text-align: start;
+}
+
+.footer__inner {
+    display: flex;
+    align-items: end;
+    max-width: 100%;
+    gap: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+    border-top: var(--color-white) 2px dashed;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+}
+.footer__contact p {
+    font-weight: bold;
+}
+
+.footer__socials {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__socials img {
+    width: 2rem;
+    height: 2rem;
 }

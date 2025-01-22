@@ -5,6 +5,7 @@ import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
 import * as intro from "../data/intro.md";
 import { getCollection } from 'astro:content';
+import Footer from "../components/Footer.astro";
 const sections = await getCollection('sections');
 ---
 
@@ -19,5 +20,6 @@ const sections = await getCollection('sections');
 			/>
 			{sections.sort((a, b) => a.data.order - b.data.order).map(section => <Section title={section.data.title} order={section.data.order} render={section.render} />)}
 		</main>
+		<Footer email="styret@bergenlandhockey.no" />
 	</div>
 </Layout>

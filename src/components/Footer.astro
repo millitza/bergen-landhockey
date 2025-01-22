@@ -1,0 +1,23 @@
+---
+interface Props {
+	email: string;
+}
+
+const { email } = Astro.props;
+---
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__contact">
+            <p>Contact</p>
+            <a class="footer__mail" href=`mailto:${email}`>{email}</a>
+        </div>
+        <div class="footer__socials">
+            <a href="https://www.facebook.com/BergenLandhockey/" target="_blank" aria-label="Visit Bergen Landhockeyklubb on Facebook">
+                <img src=`${import.meta.env.BASE_URL}/images/facebook_logo.png` alt="Facebook logo"/>
+            </a>
+            <a href="https://www.instagram.com/bergen_landhockey/" target="_blank" aria-label="Visit Bergen Landhockeyklubb on Instagram"></a>
+                <img src=`${import.meta.env.BASE_URL}/images/instagram_logo.png` alt="Instagram logo"/>
+            </a>
+        </div>
+    </div>
+</footer>
