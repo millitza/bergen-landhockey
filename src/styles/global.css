@@ -46,14 +46,6 @@ h1 {
     }
 }
 
-button {
-    color: inherit;
-    border: 0;
-    background-color: transparent;
-    border-radius: 0;
-    cursor: pointer;
-}
-
 .l-site {
     display: flex;
     flex-direction: column;
@@ -116,13 +108,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     max-width: 100%;
 }
 
 @media (min-width: 70rem) {
     .hero {
-        height: calc(100vh - 10rem);
+        height: calc(100vh - 13rem);
     }
 }
 
@@ -207,7 +199,7 @@ button {
     max-width: 100%;
     gap: 2rem;
     padding: 3rem 2rem 2rem 2rem;
-    border-top: var(--color-white) 2px dashed;
+    border-top: var(--color-yellow) 1px dashed;
 }
 
 .footer__contact {
