@@ -1,21 +1,16 @@
 ---
-import type { JSX } from 'astro/jsx-runtime';
-
 interface Props {
-	title: string;
-	content: JSX.Element;
     videoSrc: string;
 }
 
-const { title, content: HeroContent, videoSrc } = Astro.props;
+const { videoSrc } = Astro.props;
 ---
 
 <div class="hero">
-    <div class="hero__text">
-        <h1 class="hero__title">{title}</h1>
-        <HeroContent class="hero__intro" />
-    </div>
     <video class="hero__image" autoplay loop muted playsinline>
         <source src={videoSrc} type="video/webm" />
     </video>
+    <div class="hero__overlay">
+        <img src="images/logotype.svg" alt="Bergen Landhockeyklubb logo" />
+    </div>
 </div>

@@ -14,8 +14,6 @@ const sections = await getCollection('sections');
 		<Header />
 		<main>
 			<Hero
-				title={intro.frontmatter.title}
-				content={intro.Content}
 				videoSrc={intro.frontmatter.videoSrc}
 			/>
 			{sections.sort((a, b) => a.data.order - b.data.order).map(section => <Section title={section.data.title} order={section.data.order} render={section.render} />)}

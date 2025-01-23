@@ -80,7 +80,7 @@ button {
     height: 4rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 70rem) {
     .header__logo img {
         width: 8rem;
         height: 8rem;
@@ -114,66 +114,76 @@ button {
 
 .hero {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 1rem 2rem;
     max-width: 100%;
-    gap: 2rem;
 }
 
 @media (min-width: 70rem) {
     .hero {
-        flex-direction: row;
-        padding: 2rem 4rem;
-        gap: 6rem;
+        height: calc(100vh - 10rem);
     }
-}
-
-.hero__text {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-@media (min-width: 70rem) {
-    .hero__text {
-        gap: 1rem;
-    }
-}
-
-.hero__title {
-    font-family: "Noto Serif";
-    text-align: start;
 }
 
 .hero__image {
-    width: auto;
-    max-width: 100%;
-    background-color: var(--color-white);
+    display: block;
     border-radius: 2rem;
-    margin-left: auto;
+    margin-top: 2rem;
+
+    width: 100%;
+    height: auto;
 }
 
-@media (min-width: 40rem) {
-    .hero__image {
-        height: 20rem;
-        align-self: center;
-        margin-left: unset;
-    }
-}
 @media (min-width: 70rem) {
     .hero__image {
-        height: 24rem;
+        width: auto;
+        max-height: 50vh;
+    }
+}
+
+.hero__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 0;
+
+    padding-top: 4rem;
+}
+
+@media (min-width: 70rem) {
+    .hero__overlay {
+        width: 100%;
+        height: 100%;
+        padding-top: 10rem;
+    }
+}
+
+.hero__overlay img {
+    position: absolute;
+    max-width: 50rem;
+    height: auto;
+
+    width: 50vw;
+}
+
+@media (min-width: 70rem) {
+    .hero__overlay img {
+        width: 65vw;
     }
 }
 
 .section {
     padding: 1rem 2rem;
 }
+
 @media (min-width: 70rem) {
     .section {
         padding: 2rem 4rem;
     }
 }
+
 .section__text {
     display: flex;
     flex-direction: column;
@@ -184,7 +194,9 @@ button {
     .section__text {
         gap: 1rem;
     }
-}.section__title {
+}
+
+.section__title {
     font-family: "Noto Serif";
     text-align: start;
 }
@@ -202,6 +214,7 @@ button {
     display: flex;
     flex-direction: column;
 }
+
 .footer__contact p {
     font-weight: bold;
 }

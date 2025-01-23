@@ -1,6 +1,6 @@
 ---
 title: "Membership"
-order: 1
+order: 2
 ---
 
 To become a member of Bergen Landhockeyklubb, simply register and pay the 200 NOK membership fee for 12 months directly on minidrett.no.

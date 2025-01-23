@@ -1,6 +1,6 @@
 ---
 title: "Training"
-order: 2
+order: 3
 ---
 
 During the winter season 2025 (until April 2025), we practice every
