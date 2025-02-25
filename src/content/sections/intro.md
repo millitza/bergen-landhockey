@@ -3,14 +3,13 @@ title: "Bergen Landhockey"
 order: 1
 ---
 
-Join us and help build Vestland's first field hockey team.
+Join Bergen’s growing field hockey community!
 <br>
 <br>
-Field hockey is a hockey discipline under the Bandy Association with roots from Pakistan, England, and the Netherlands.
-In spring and summer, the sport is played outdoors on a grass pitch. Both teams have 11 players on the field, 10 outfield players, and 1 goalkeeper.
-Field hockey sticks are wooden and left-handed, and goals are scored with a small hard ball at 5-a-side goals.
-In winter, there are indoor training and matches with 6 players and sidboards.
-The aim of the game is to score the most goals against the opposing team. 
+Be part of history by joining Vestland's first and only field hockey team! Whether you're a seasoned player or brand new to the sport, everyone is welcome to help build the field hockey community in Bergen. By joining us, you’ll also connect with players and teams across all of Norway.
 <br>
 <br>
-Anyone over 16 is welcome. Experience is not necessary. 
+Field hockey is a team sport under the Bandy Association, with its roots in Pakistan, England, and the Netherlands. While similar to bandy, it differs in equipment, playing surface, and game style. In the summer, we play outdoor on a grass pitch with 11 players per team (10 outfield + 1 goalkeeper). In winter, we move indoors to play fast-paced 6-a-side matches with sideboards.
+<br>
+<br>
+No experience? No problem! Players of all skill levels (16+) are welcome. No equipment is needed to start. 
