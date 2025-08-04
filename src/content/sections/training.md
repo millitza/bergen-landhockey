@@ -3,12 +3,12 @@ title: "Training"
 order: 3
 ---
 
-Winter season (October 24 - April 25)
+Winter season (August 25 - April 26)
 
-- Monday from 19.00 to 20.30 at Holen skole (Øvre Holen 6, 5163 Laksevåg).
+- Monday from 1630 to 1830 at Ny-Krohnborg Senter  (Rogagaten 9, 5055 Bergen).
 - Thursday from 17.30 to 19.00 at Langhaugen skole gym (Hagerups Vei 17, Bergen).
   
-Summer season (May 25 - October 25)
+Summer season (May 25 - August 25)
 
 - Friday from 19.00 to 20.30 at Rautjernbane (Wergeland fotballbane, 5067 Bergen).
 
