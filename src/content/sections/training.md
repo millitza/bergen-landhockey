@@ -6,9 +6,8 @@ order: 3
 Winter season (August 25 - April 26)
 
 - Monday from 1630 to 1830 at Ny-Krohnborg Senter  (Rogagaten 9, 5055 Bergen).
-- Thursday from 17.30 to 19.00 at Langhaugen skole gym (Hagerups Vei 17, Bergen).
   
-Summer season (May 25 - August 25)
+Summer season (May 25 - September 25)
 
 - Friday from 19.00 to 20.30 at Rautjernbane (Wergeland fotballbane, 5067 Bergen).
 
