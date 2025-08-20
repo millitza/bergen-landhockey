@@ -16,7 +16,7 @@ const sections = await getCollection('sections');
 			<Hero
 				videoSrc={intro.frontmatter.videoSrc}
 			/>
-			{sections.sort((a, b) => a.data.order - b.data.order).map(section => <Section title={section.data.title} order={section.data.order} render={section.render} />)}
+			{sections.sort((a, b) => a.data.order - b.data.order).map(section => <Section section={section} />)}
 		</main>
 		<Footer email="styret@bergenlandhockey.no" />
 	</div>
