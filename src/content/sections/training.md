@@ -5,11 +5,11 @@ order: 3
 
 Winter season (August 25 - April 26)
 
-- Monday from 1630 to 1830 at Ny-Krohnborg Senter  (Rogagaten 9, 5055 Bergen).
+- Monday from 1700 to 1830 at Ny-Krohnborg Senter  (Rogagaten 9, 5055 Bergen).
   
-Summer season (May 25 - September 25)
+Summer season (May 26 - September 26)
 
-- Friday from 19.00 to 20.30 at Rautjernbane (Wergeland fotballbane, 5067 Bergen).
+- TBA at Rautjernbane (Wergeland fotballbane, 5067 Bergen).
 
 Equipment: Field hockey stick and small hard balls can be borrowed at trainings. Mouth guard, shin guard and glove are to be purchased individually. 
 
