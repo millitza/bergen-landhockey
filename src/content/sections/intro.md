@@ -12,4 +12,4 @@ Be part of history by joining Vestland's first and only field hockey team! Wheth
 Field hockey is a team sport under the Bandy Association, with its roots in Pakistan, England, and the Netherlands. While similar to bandy, it differs in equipment, playing surface, and game style. In the summer, we play outdoor on a grass pitch with 11 players per team (10 outfield + 1 goalkeeper). In winter, we move indoors to play fast-paced 6-a-side matches with sideboards.
 <br>
 <br>
-No experience? No problem! Players of all skill levels (16+) are welcome. No equipment is needed to start. 
+No experience? No problem! Players of all skill levels are welcome. No equipment is needed to start. 
