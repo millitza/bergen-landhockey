@@ -2,7 +2,7 @@
 title: "Bergen Landhockey"
 order: 1
 ---
-<div class="header__logo">
+<div>
           <a href="https://fb.me/e/4rt65jCP6" target="_blank" aria-label="To the event">
                 <img src="images/hockey_festival_26.png"/>
             </a>
