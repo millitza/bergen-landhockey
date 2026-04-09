@@ -7,7 +7,7 @@ order: 1
      <img 
       src="https://raw.githubusercontent.com/millitza/bergen-landhockey/main/public/images/hockey_festival_26.png" 
       alt="Hockey Festival 2026"
-      style="max-width:100%; width:500px; height:auto; display:block; margin:0 auto;"
+      style="max-width:100%; height:auto; display:block; margin:0 auto;"
     />
   </a>
 </div>
