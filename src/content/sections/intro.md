@@ -1,12 +1,7 @@
 ---
 title: "Bergen Landhockey"
-order: 1
+order: 2
 ---
-<div>
-          <a href="https://fb.me/e/4rt65jCP6" target="_blank" aria-label="To the event">
-              <img src="./public/images/hockey_festival_26.png" width="500"/>
-            </a>
-</div>
 Join Bergen’s growing field hockey community!
 <br>
 <br>
