@@ -4,7 +4,7 @@ order: 1
 ---
 <div>
           <a href="https://fb.me/e/4rt65jCP6" target="_blank" aria-label="To the event">
-                <img src="images/hockey_festival_26.png"/>
+              <img src="./public/images/hockey_festival_26.png" width="500"/>
             </a>
 </div>
 Join Bergen’s growing field hockey community!
