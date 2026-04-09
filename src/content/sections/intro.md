@@ -3,7 +3,7 @@ title: "Bergen Landhockey"
 order: 1
 ---
 <p align="center">
-  <img src="public/images/Hockey festival 26.png" style="width:60%; max-width:600px;">
+  <img src="bergen-landhockey/public/images/Hockey festival 26.png">
 </p>
 Join Bergen’s growing field hockey community!
 <br>
