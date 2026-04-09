@@ -3,7 +3,9 @@ title: "Bergen Landhockey"
 order: 1
 ---
 <p align="center">
-  <img src="public/images/hockey_festival_26.png" style="width:60%; max-width:600px;">
+   <a href="https://fb.me/e/4rt65jCP6" target="_blank" aria-label="To the event">
+                <img src="images/hockey_festival_26.png." alt="Hockey Festival"/>
+            </a>
 </p>
 Join Bergen’s growing field hockey community!
 <br>
