@@ -1,6 +1,6 @@
 ---
 title: "Training"
-order: 3
+order: 4
 ---
 
 Winter season (August 25 - April 26)
