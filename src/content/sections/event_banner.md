@@ -1,5 +1,5 @@
 ---
-title:
+title: Events
 order: 1
 ---
 <div style="text-align: center;">
