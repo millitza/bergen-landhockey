@@ -7,4 +7,4 @@ order: 1
     <img src="https://raw.githubusercontent.com/millitza/bergen-landhockey/main/public/images/hockey_festival_26.png"/>
   </a>
 </div>
-</div>
+
