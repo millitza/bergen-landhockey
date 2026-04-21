@@ -1,7 +1,39 @@
-<header class="header">
-    <div class="header__inner">
-        <div class="header__logo">
-            <img src="/images/logo.svg" alt="Bergen Landhockeyklubb logo" />
-        </div>
+---
+import type { CollectionEntry } from 'astro:content';
+import { getAnchor } from '../utils/anchor';
+
+interface Props {
+    sections: CollectionEntry<'sections'>[];
+}
+
+const { sections } = Astro.props;
+
+const navItems = sections.map(s => ({
+    label:  s.data.navLabel ?? s.data.title,
+    anchor: getAnchor(s.data),
+}));
+
+const ctaSection = sections.find(s => s.data.navCta);
+const ctaAnchor  = ctaSection ? getAnchor(ctaSection.data) : null;
+---
+
+<nav id="navbar">
+    <div class="nav__logo">
+        <img src="/images/logo.svg" alt="Bergen Landhockeyklubb" />
     </div>
-</header>
+    <ul class="nav__links">
+        {navItems.map(item => (
+            <li><a href={`#${item.anchor}`}>{item.label}</a></li>
+        ))}
+        {ctaAnchor && (
+            <li><a class="nav__cta" href={`#${ctaAnchor}`}>Join Us</a></li>
+        )}
+    </ul>
+</nav>
+
+<script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar?.classList.toggle('scrolled', window.scrollY > 40);
+    });
+</script>

@@ -1,14 +1,12 @@
 ---
 title: Events
+label: Upcoming
 order: 1
+anchor: events
+navLabel: Events
+body: Join us for upcoming field hockey events in Bergen!
+items:
+  - image: /images/hockey_festival_26.png
+    alt: "Field Hockey Family Festival — 30.05.2026, Krohnsminde Idrettsplass"
+    url: https://fb.me/e/4rt65jCP6
 ---
-<div align="center">
-  <a href="https://fb.me/e/4rt65jCP6" target="_blank">
-     <img 
-      src="https://raw.githubusercontent.com/millitza/bergen-landhockey/main/public/images/hockey_festival_26.png" 
-      alt="Hockey Festival 2026"
-      style="max-width:100%; height:auto; display:block; margin:0 auto;"
-    />
-  </a>
-</div>
-

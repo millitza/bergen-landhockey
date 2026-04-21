@@ -3,21 +3,24 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
+import Footer from "../components/Footer.astro";
+
 import * as intro from "../data/intro.md";
 import { getCollection } from 'astro:content';
-import Footer from "../components/Footer.astro";
+
 const sections = await getCollection('sections');
+const sorted = sections.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout>
-	<div class="l-site">
-		<Header />
-		<main>
-			<Hero
-				videoSrc={intro.frontmatter.videoSrc}
-			/>
-			{sections.sort((a, b) => a.data.order - b.data.order).map(section => <Section section={section} />)}
-		</main>
-		<Footer email="styret@bergenlandhockey.no" />
-	</div>
+    <Header sections={sorted} />
+    <main>
+        <Hero
+            tagline={intro.frontmatter.tagline}
+            subtagline={intro.frontmatter.subtagline}
+            buttons={intro.frontmatter.buttons}
+        />
+        {sorted.map(section => <Section section={section} />)}
+    </main>
+    <Footer />
 </Layout>

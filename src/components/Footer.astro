@@ -1,24 +1,30 @@
 ---
-interface Props {
-	email: string;
-}
-
-const { email } = Astro.props;
+const email = "styret@bergenlandhockey.no";
+const orgNumber = "934 345 355";
+const socials = [
+  { name: "Instagram", url: "https://www.instagram.com/bergen_landhockey/", icon: "/images/instagram_logo.png" },
+  { name: "Facebook",  url: "https://www.facebook.com/BergenLandhockey/",   icon: "/images/facebook_logo.png" },
+];
+const copyright = `© ${new Date().getFullYear()} Bergen Landhockeyklubb · All rights reserved`;
 ---
-<footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__contact">
-            <p>Contact</p>
-            <a class="footer__mail" href=`mailto:${email}`>{email}</a>
-	<p>Organisasjonsnummer: 934345355</p>
-        </div>
-        <div class="footer__socials">
-               <a href="https://www.instagram.com/bergen_landhockey/" target="_blank" aria-label="Visit Bergen Landhockeyklubb on Instagram">
-                <img src="images/instagram_logo.png" alt="Instagram logo"/>
-            </a>
-				<a href="https://www.facebook.com/BergenLandhockey/" target="_blank" aria-label="Visit Bergen Landhockeyklubb on Facebook">
-                <img src="images/facebook_logo.png" alt="Facebook logo"/>
-            </a>
-        </div>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/images/logo.svg" alt="Bergen Landhockeyklubb" />
+      <div class="footer-contact">
+        <p>Contact us</p>
+        <a href={`mailto:${email}`}>{email}</a>
+        <p class="footer-org">Organisasjonsnummer: {orgNumber}</p>
+      </div>
     </div>
+    <div class="footer-socials">
+      {socials.map(s => (
+        <a class="social-link" href={s.url} target="_blank" rel="noopener noreferrer" aria-label={s.name}>
+          <img src={s.icon} alt={s.name} />
+        </a>
+      ))}
+    </div>
+  </div>
+  <p class="footer-copy">{copyright}</p>
 </footer>

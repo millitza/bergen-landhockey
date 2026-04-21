@@ -1,16 +1,39 @@
 ---
-interface Props {
-    videoSrc: string;
+interface Button {
+  label: string;
+  anchor: string;
+  style: 'primary' | 'outline';
 }
 
-const { videoSrc } = Astro.props;
+interface Props {
+  tagline: string;
+  subtagline: string;
+  buttons: Button[];
+}
+
+const { tagline, subtagline, buttons } = Astro.props;
 ---
 
-<div class="hero">
-    <video class="hero__image" autoplay loop muted playsinline>
-        <source src={videoSrc} type="video/webm" />
-    </video>
-    <div class="hero__overlay">
-        <img src="images/logotype.svg" alt="Bergen Landhockeyklubb logo" />
+<section class="hero" id="hero">
+  <video class="hero__gif" autoplay loop muted playsinline>
+    <source src="/images/team_animation.webm" type="video/webm" />
+    <img src="/images/team_animation.gif" alt="" aria-hidden="true" />
+  </video>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <img class="hero__logotype" src="/images/logotype.svg" alt="Bergen Landhockeyklubb" />
+    <p class="hero__tagline">
+      {tagline}<br />
+      <strong>{subtagline}</strong>
+    </p>
+    <div class="hero__actions">
+      {buttons.map(btn => (
+        <a href={`#${btn.anchor}`} class={`btn btn--${btn.style}`}>{btn.label}</a>
+      ))}
     </div>
-</div>
+  </div>
+  <div class="hero__scroll">
+    <div class="hero__scroll-line"></div>
+    scroll
+  </div>
+</section>
