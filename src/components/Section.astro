@@ -1,21 +1,87 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { render } from 'astro:content';
-import { getSectionColor } from '../utils/sectionColors';
+import { getAnchor } from '../utils/anchor';
 
 interface Props {
-    section: CollectionEntry<"sections">
+    section: CollectionEntry<'sections'>;
 }
 
 const { section } = Astro.props;
-const { Content } = await render(section);
+const d = section.data;
 
-const styles = getSectionColor(section.data.order);
+const anchor = getAnchor(d);
+const bodyParagraphs = Array.isArray(d.body) ? d.body : [d.body];
+
+const imageItems = d.items?.filter(i => i.image) ?? [];
+const cardItems  = d.items?.filter(i => !i.image) ?? [];
 ---
 
-<div class="section" style={{ background: `var(${styles?.bgColor})`, color: `var(${styles?.textColor})` }}>
-    <div class="section__text">
-        <h2 class="section__title">{section.data.title}</h1>
-        <Content class="section__content" />
+<section class={`section section--${d.theme}`} id={anchor}>
+    <div class="container">
+        <div class="section-label">{d.label}</div>
+        <h2 class="section-title">{d.title}</h2>
+        <div class="divider"></div>
+
+        {bodyParagraphs.map(p => (
+            <p class="section-body" set:html={p} />
+        ))}
+
+        {d.stats && d.stats.length > 0 && (
+            <div class="stat-grid">
+                {d.stats.map(s => (
+                    <div class="stat-card">
+                        <div class="stat-card__val">{s.value}</div>
+                        <div class="stat-card__lbl">{s.label}</div>
+                    </div>
+                ))}
+            </div>
+        )}
+
+        {d.tags && d.tags.length > 0 && (
+            <div class="tags-section">
+                {d.tagsTitle && <p class="tags-title">{d.tagsTitle}</p>}
+                <div class="tag-row">
+                    {d.tags.map(t => (
+                        <span class={`tag tag--${t.style}`}>{t.text}</span>
+                    ))}
+                </div>
+            </div>
+        )}
+
+        {imageItems.map(item => (
+            item.url
+                ? <a class="item-banner" href={item.url} target="_blank" rel="noopener noreferrer">
+                      <img src={item.image} alt={item.alt ?? ''} />
+                  </a>
+                : <div class="item-banner">
+                      <img src={item.image} alt={item.alt ?? ''} />
+                  </div>
+        ))}
+
+        {cardItems.length > 0 && (
+            <div class="items-grid">
+                {cardItems.map(item => {
+                    const cls = `item-card${item.amount ? ' item-card--price' : item.icon ? ' item-card--icon' : ''}`;
+                    return (
+                        <div class={cls}>
+                            {item.amount && <div class="item-card__amount">{item.amount}</div>}
+                            {item.icon   && <div class="item-card__icon">{item.icon}</div>}
+                            <div class="item-card__text">
+                                {item.title       && <strong class="item-card__title">{item.title}</strong>}
+                                {item.description && <p class="item-card__desc">{item.description}</p>}
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        )}
+
+        {d.cta && (
+            <div class="section-cta">
+                <a href={d.cta.url} target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                    {d.cta.label}
+                </a>
+            </div>
+        )}
     </div>
-</div>
+</section>
