@@ -1,5 +1,5 @@
 {
-  "name": "solar-series",
+  "name": "bergen-landhockey",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,8 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "astro": "^5.13.2",
-    "typescript": "^5.5.4"
+    "@astrojs/check": "^0.9.8",
+    "astro": "^6.1.8",
+    "typescript": "^5.9.3"
   }
 }
