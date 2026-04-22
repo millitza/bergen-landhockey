@@ -19,5 +19,5 @@ items:
     description: "Friday 17:00 & Sunday 13:00 · Rautjernbane (Wergeland fotballbane), 5067 Bergen"
   - icon: "☀"
     title: "Kids 10+ · Summer"
-    description: "Wednesday 15:00 · Krohnsminde idrettsplass"
+    description: "Wednesday 15:00-16:00 · Krohnsminde idrettsplass"
 ---
