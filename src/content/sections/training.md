@@ -16,8 +16,8 @@ items:
     description: "Monday 15:30–17:00 · Ny-Krohnborg Senter, Rogagaten 9, 5055 Bergen"
   - icon: "☀"
     title: "Adults 16+ · Summer"
-    description: "Friday 19:00 & Sunday 13:00 · Rautjernbane (Wergeland fotballbane), 5067 Bergen"
+    description: "Friday 17:00 & Sunday 13:00 · Rautjernbane (Wergeland fotballbane), 5067 Bergen"
   - icon: "☀"
     title: "Kids 10+ · Summer"
-    description: "TBA"
+    description: "Wednesday 15:00 · Krohnsminde idrettsplass"
 ---
