@@ -15,10 +15,10 @@ cta:
   label: Register on MinIdrett
   url: https://medlemskap.nif.no/1003703
 items:
-  - amount: "150 NOK"
+  - amount: "200 NOK"
     title: Annual Membership
     description: Full 12-month membership. Pay via MinIdrett.
-  - amount: "200 NOK"
+  - amount: "500 NOK"
     title: Training Fee
     description: Per season (winter or summer). Covers all training sessions.
   - amount: "↓"
