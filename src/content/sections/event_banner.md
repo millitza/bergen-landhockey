@@ -7,6 +7,6 @@ navLabel: Events
 body: Join us for upcoming field hockey events in Bergen!
 items:
   - image: /images/hockey_festival_26.png
-    alt: "Field Hockey Family Festival — 30.05.2026, Krohnsminde Idrettsplass"
-    url: https://fb.me/e/4rt65jCP6
+    alt: "We play at Trondheim Cup — 13. & 14. 11.2026, Trondheim Spektrum"
+    url: https://www.instagram.com/p/Dcy2O06OvOK/
 ---
