@@ -23,7 +23,7 @@ items:
     description: Per season (winter or summer). Covers all training sessions.
   - amount: "↓"
     title: Exchange Student Discount
-    description: Staying one semester? Reduced membership price available.
+    description: Staying one semester? Reduced membership price available. Send us an e-mail.
   - amount: License
     title: Field Hockey License
     description: Recommended for match play — includes injury insurance for official games.
