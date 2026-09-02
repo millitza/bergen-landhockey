@@ -20,4 +20,6 @@ items:
   - icon: "☀"
     title: "Kids 10+ · Summer"
     description: "Wednesday 15:00-16:00 · Krohnsminde idrettsplass"
+
+We are looking for kids to start Bergens first U16 team. Fill out this form to register for the kids academy: https://forms.gle/nJMcCKSbHvFT29Qk6
 ---
