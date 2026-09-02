@@ -6,7 +6,7 @@ anchor: membership
 navLabel: Membership
 navCta: true
 body:
-  - "To become a member of Bergen Landhockeyklubb, simply register here on <a href=\"https://medlemskap.nif.no/1003703\" target=\"_blank\">MinIdrett</a> and pay the 150 NOK membership fee for 12 months directly. If you are an exchange student and only stay one semester, you can chose to the option to pay a reduced price."
+  - "To become a member of Bergen Landhockeyklubb, simply register here on <a href=\"https://medlemskap.nif.no/1003703\" target=\"_blank\">MinIdrett</a> and pay the 200 NOK membership fee for 12 months directly."
   - "The training fee for all is currently 200 NOK per season (winter / summer)."
   - "If you plan to play matches, we recommend purchasing the field hockey license as well. This license provides insurance coverage in case of injury during official games."
   - "Want to support us without playing? You can become a <strong>støttemedlem</strong> (supporting member) and help grow the club!"
