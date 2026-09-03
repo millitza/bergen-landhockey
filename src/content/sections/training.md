@@ -7,7 +7,6 @@ navLabel: Training
 body:
 - "Equipment: Field hockey stick and small hard balls can be borrowed at trainings. Mouth guard, shin guard and glove are to be purchased individually."
 - "Trainings, matches, travels and other events are organised internally on spond. If you want to join for a try-out, send us an e-mail or message us on Instagram or Facebook."
-- We are looking for kids to start Bergens first U16 team. Fill out this form to register for the academy: https://forms.gle/nJMcCKSbHvFT29Qk6
 items:
   - icon: "❄"
     title: "Adults 16+ · Winter"
