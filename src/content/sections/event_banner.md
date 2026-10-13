@@ -6,7 +6,7 @@ anchor: events
 navLabel: Events
 body: Join us for upcoming field hockey events in Bergen!
 items:
-  - image: /images/trondheimcup.png
+  - image: images/Invites to.png
     alt: "Norway Winter Cup - 27 & 28.02.2027"
     url: https://www.visitbergen.com/hva-skjer/norway-winter-cup-p8655003
 ---
