@@ -7,6 +7,6 @@ navLabel: Events
 body: Join us for upcoming field hockey events in Bergen!
 items:
   - image: /images/trondheimcup.png
-    alt: "We play at Trondheim Cup — 13. & 14. 11.2026, Trondheim Spektrum"
-    url: https://www.instagram.com/p/Dcy2O06OvOK/
+    alt: "Norway Winter Cup - 27 & 28.02.2027"
+    url: https://www.visitbergen.com/hva-skjer/norway-winter-cup-p8655003
 ---
